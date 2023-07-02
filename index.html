@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retailerform</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <div>
+    <form  action="login.html" name="myForm"   onsubmit="return
+    validateForm()"method="post" >
+        <h1>Sign Up</h1>
+        <div class="mb-3"id ="fname">
+            <input type="text" placeholder="Retailer Name" name="r_name" required />
+            <b><span class="formerror"></span></b>
+        </div>
+        <div class="mb-3" id="dropdown">
+          Retailer Type:<br>
+         <select name="type" required>
+           <!-- <option value="">Select Retailer Type</option> -->
+        <option value="Retailer with Logistics">Retailer with Logistics</option>
+         <option value="Retailer without Logistics">Retailer without Logistics</option>
+         <b><span class="formerror"></span></b>
+       </select>
+        </div>  
+       <div class="mb-3" id="fusername">
+        <input type="text" placeholder="UserName" name="username" required />
+        <b><span class="formerror"></span></b>
+         </div>
+         <div class="mb-3" id="fadress">
+        <input type="text" placeholder="Retailer Address" name="address" required />
+        <b><span class="formerror"></span></b>
+        </div>
+        <div class="mb-3" id="fpan">
+        <input type="text" placeholder="Pan-Number" name="pan" required />
+        <b><span class="formerror"></span></b>
+        </div>
+        <div class="mb-3" id="fcitizenno">
+        <input type="text" placeholder="Citizenship-Number" name="cnumber" required />
+        <b><span class="formerror"></span></b>
+        </div>
+        <div class="mb-3" id="fpassword">
+        <input type="password" placeholder="Password" name="password" required />
+        <b><span class="formerror"> </span></b>
+        </div>
+        <button type="submit">Sign Up</button>
+        <a href="login.html">Already have an account</a>
+      </form>  
+    </div>
+</body>
+<script type="text" src="./index.js"></script>
+</html>
